@@ -1,0 +1,56 @@
+
+
+body{
+    background-image:url(../imagenes/hombre-negocios-usando-dispositivos-tecnologia-e-iconos-interfaz-linea-delgada_117023-904.webp);
+    background-size: cover;
+}
+.stilo{
+    color:rgb(194, 115, 26);
+    font-size:2em;
+    font-weight: bold;
+    font-family: roboto, serif;
+}
+.mision{
+    background: rgba(49, 6, 166, 0.669);
+    width: 84%;
+    font-size: 20px;
+    color: white;
+    padding: 3%;
+    position: left;
+    top: 15%;
+    left: 30%;
+    height:20em;
+    font-family: roboto, serif;
+   
+}
+
+.historia{
+    background: rgba(49, 6, 166, 0.669);
+    width: 84%;
+    font-size: 20px;
+    color: white;
+    padding: 3%;
+    position: left;
+    top: 15%;
+    left: 30%;
+    height:20em;
+    font-family: roboto, serif;
+  
+}
+
+.vision{
+    background: rgba(49, 6, 166, 0.669);
+    width: 84%;
+    font-size: 20px;
+    color: white;
+    padding: 3%;
+    position: right;
+    top: 15%;
+    left: 30%;
+    height: 20em;
+    font-family: roboto, serif;
+
+}
+.nav-item,.navbar-brand{
+    font-family: roboto, serif;
+}

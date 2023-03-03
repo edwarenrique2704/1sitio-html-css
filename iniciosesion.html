@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciosesion</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WEB SITE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iniciosesion.html">Inicio de sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                            <h3>Iniciar sesion</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="Gcontainer">
+                            <form id="frminiciosesion" name="frminiciosesion">
+                                <div class="mb-3 row">
+                                    <label for="user1" class="col-4 col-form-label">
+                                        <h4>Usuario 1</h4>
+                                    </label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" name="user1" id="user1"
+                                            placeholder="Usuario 1">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="user2" class="col-4 col-form-label">
+                                        <h4>Usuario 2</h4>
+                                    </label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" name="user2" id="user2"
+                                            placeholder="Usuario 2">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="pass" class="col-4 col-form-label">
+                                        <h4>Contraseña</h4>
+                                    </label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" name="pass" id="pass"
+                                            placeholder="Contraseña">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn btn-success">
+                                            <h4>Enviar</h4>
+                                        </button>
+                                    </div>
+                                </div>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery-3.6.1.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+
+        <script>
+            $().ready(function () {
+                $('#frminiciosesion').validate({
+                    rules: {
+                        user1: {
+                            required: true,
+                            minlength: 7
+                        },
+                        user2: {
+                            required: true,
+                            minlength: 7
+                        },
+                        pass: {
+                            required: true,
+                            minlength: 8
+                        },
+                    },
+                    messages: {
+                        user1: 'El Usuario numero1 no puede estar y debe tenr minimo 7 caracteres',
+                        user2: 'El Usuario 2 no puede estar vacio y debe tener minimo 7 caracteres',
+                        pass: 'La contraseña debe de tener  minimo 8 caracteres y no puede estar vacia ',
+                    }
+                })
+            });
+        </script>
+    </div>
+</body>
+</html>
